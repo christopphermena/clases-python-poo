@@ -9,7 +9,7 @@ class Auto():
 
     #Métodos de la clase
     def MostrarInformacion(self):
-        print(f"Auto: {self.marca} - modelo {self.modelo} - color {self.color}")
+        print(f"Auto: Marca: {self.marca} - modelo: {self.modelo} - color: {self.color}")
 
     def Arrancar(self):
         print(f"Auto: {self.marca} está arrancando...")

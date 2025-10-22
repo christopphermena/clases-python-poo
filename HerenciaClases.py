@@ -24,12 +24,18 @@ class Automovil(Vehiculo):
 
     def TocarBocina(self):
         print("La bocina suena Piiiiiii piiiiiii")
+        
+    def MostrarColor(self):
+        print(f"El color del automóvil {self.marca} {self.modelo} es: {self.color}")
 
 #Crear objetos
-objetoAuto1=Automovil("Mazda","mazda3","blanco")
+objetoAuto1=Automovil("Mazda","CX5","blanco")
 
 #Usemos los métodos de la clase padre
 objetoAuto1.MostrarInformacion()
 
 #Usemos métodos de la clase hija
 objetoAuto1.TocarBocina()
+
+#Usemos metodos combinados padre e hija
+objetoAuto1.MostrarColor()

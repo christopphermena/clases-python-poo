@@ -7,7 +7,7 @@ class Persona():
 
     #Métodos
     def SaludarPersona(self):
-        print(f"Hola {self.nombre}, bienvenido a este curso.")
+        print(f"Hola {self.nombre}, bienvenido(a) a este curso.")
 
     def MostrarEdad(self):
         print(f"{self.nombre} tiene {self.edad} años.")
@@ -20,6 +20,33 @@ objetoPersona2=Persona("Alejandra",54)
 objetoPersona1.SaludarPersona()
 objetoPersona2.MostrarEdad()
 
+#Construir subclase Estudiante (herencia)
+class Estudiante(Persona):
+    def __init__(self, nombre, edad, carrera, semestre):
+        super().__init__(nombre, edad)
+        self.carrera = carrera
+        self.semestre = semestre
+ 
+
+    #Crear los metodos para estudiante combinados con la clase padre
+    def MostrarInformacion(self):
+        print(f"Nombre: {self.nombre}, Edad: {self.edad}, Carrera: {self.carrera}, Semestre: {self.semestre}")
+    
+    def MostrarCumplirAnios(self):
+        self.edad += 1
+        print(f"{self.nombre} ahora tiene {self.edad} años.")
+    
+    
+#Crear objetos de la clase Estudiante
+PersonaEstudiante1 = Estudiante("Juan", 30, "Analista Programador", "2do. semestre") 
+PersonaEstudiante2 = Estudiante("Felipe", 20, "Analista Programador", "4to. semestre") 
+    
+#Usar los metodos de los estudiantes
+#Informacion del estudiante
+PersonaEstudiante1.MostrarInformacion()
+#Años cumplidos del estudiante
+PersonaEstudiante2.MostrarCumplirAnios()
+    
 #Tarea para la casa ...la traen el miércoles
 #Implementar herencia con la clase Persona
 #Superclase va a ser Persona()
