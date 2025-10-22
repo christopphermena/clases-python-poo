@@ -30,7 +30,7 @@ class Estudiante(Persona):
 
     #Crear los metodos para estudiante combinados con la clase padre
     def MostrarInformacion(self):
-        print(f"Nombre: {self.nombre}, Edad: {self.edad}, Carrera: {self.carrera}, Semestre: {self.semestre}")
+        print(f"Nombre: {self.nombre},\nEdad: {self.edad},\nCarrera: {self.carrera},\nSemestre: {self.semestre}")
     
     def MostrarCumplirAnios(self):
         self.edad += 1
@@ -38,14 +38,17 @@ class Estudiante(Persona):
     
     
 #Crear objetos de la clase Estudiante
-PersonaEstudiante1 = Estudiante("Juan", 30, "Analista Programador", "2do. semestre") 
-PersonaEstudiante2 = Estudiante("Felipe", 20, "Analista Programador", "4to. semestre") 
+PersonaEstudiante1 = Estudiante("Juan", 30, "Analista Programador", "2do. semestre.") 
+PersonaEstudiante2 = Estudiante("Felipe", 20, "Analista Programador", "4to. semestre.") 
     
 #Usar los metodos de los estudiantes
 #Informacion del estudiante
 PersonaEstudiante1.MostrarInformacion()
 #Años cumplidos del estudiante
 PersonaEstudiante2.MostrarCumplirAnios()
+
+#Saludo del estudiante (método heredado de la clase Persona)
+PersonaEstudiante1.SaludarPersona()
     
 #Tarea para la casa ...la traen el miércoles
 #Implementar herencia con la clase Persona
