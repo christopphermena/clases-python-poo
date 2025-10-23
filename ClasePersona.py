@@ -38,8 +38,8 @@ class Estudiante(Persona):
     
     
 #Crear objetos de la clase Estudiante
-PersonaEstudiante1 = Estudiante("Juan", 30, "Analista Programador", "2do. semestre.") 
-PersonaEstudiante2 = Estudiante("Felipe", 20, "Analista Programador", "4to. semestre.") 
+PersonaEstudiante1 = Estudiante("Juan", 30, "Analista Programador", 1) 
+PersonaEstudiante2 = Estudiante("Felipe", 20, "Analista Programador", 2) 
     
 #Usar los metodos de los estudiantes
 #Informacion del estudiante
